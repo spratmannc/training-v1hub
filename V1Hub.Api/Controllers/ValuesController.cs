@@ -59,8 +59,8 @@ namespace V1Hub.Api.Controllers
                          {
                              Oid = a.Oid.Token,
                              Title = a.GetAttribute(nameAttr).Value.ToString(),
-                             StartDate = DateTime.Parse(a.GetAttribute(beginDateAttr).Value as string),
-                             EndDate = DateTime.Parse(a.GetAttribute(endDateAttr).Value as string)
+                             StartDate = DateTime.Parse(a.GetAttribute(beginDateAttr).Value.ToString()),
+                             EndDate = DateTime.Parse(a.GetAttribute(endDateAttr).Value.ToString())
                          });
 
         }
